@@ -1,18 +1,13 @@
 const fibonacci = function(a) {
-    let arr = [];
+    let arr = [0,1];
     let i = 2;
-    arr[0] = 0;
-    arr[1] = 1;
-    if (a < 0) 
-    {
+    if (a < 0) {
         return 'OOPS'
-    }
-    else 
-    {
+    } else {
     for (i; i <= a; i++) {
         arr[i] = arr[i-1] + arr[i-2];
     }
-    return arr[a]
+    return arr[a];
     }
 };
 
